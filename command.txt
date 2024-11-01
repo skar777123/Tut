@@ -1,0 +1,13 @@
+npx create-react-app first
+cd first
+
+
+version control - git,github,gitlabs
+
+extension - 
+.js .ts ( JavaScript and TypeScript)
+.jsx .tsx ( JavaScript extension and TypeScript extension)
+
+react hooks:
+useState
+useEffect
