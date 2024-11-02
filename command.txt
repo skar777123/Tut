@@ -11,3 +11,6 @@ extension -
 react hooks:
 useState
 useEffect
+
+
+cookies/session - frontend or token - backend

@@ -1,4 +1,8 @@
 import React from "react";
+// import { Link } from " react-router-dom";
+
+// Link -> a
+// href -> to
 
 const Navbar = () => {
   return (
@@ -26,15 +30,29 @@ const Navbar = () => {
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/">
+              <a class="nav-link" href="/cart">
                 Cart
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/">
+              <a class="nav-link" href="/profile">
                 Profile
               </a>
             </li>
+            {localStorage.getItem("profiler") ? (
+              <li>
+                <button
+                  onClick={() => {
+                    localStorage.removeItem("profiler");
+                    window.location.href = "/";
+                  }}
+                >
+                  Logout
+                </button>
+              </li>
+            ) : (
+              <></>
+            )}
           </ul>
         </div>
       </div>

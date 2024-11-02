@@ -70,8 +70,11 @@ const Register = () => {
                 email: email,
                 password: password,
               });
+
+              localStorage.setItem("profiler", "qwertyuiop");
+
               alert("Succefully Registered");
-              // window.location.href = "/login";
+              window.location.href = "/";
             }
           }}
           type="submit"
