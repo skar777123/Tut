@@ -30,7 +30,7 @@ const Register = () => {
             setName(e.target.value);
           }}
         />
-        {alert1 == true && <p style={{ color: "red" }}>username needed</p>}
+        {alert1 === true && <p style={{ color: "red" }}>username needed</p>}
         <br />
         <label>Email:</label>
         <input
@@ -39,7 +39,7 @@ const Register = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-        {alert2 == true && <p style={{ color: "red" }}>email needed</p>}
+        {alert2 === true && <p style={{ color: "red" }}>email needed</p>}
 
         <br />
         <label>Password:</label>
@@ -49,19 +49,19 @@ const Register = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        {alert3 == true && <p style={{ color: "red" }}>password needed</p>}
+        {alert3 === true && <p style={{ color: "red" }}>password needed</p>}
 
         <br />
 
         <button
           onClick={() => {
-            if (name == "") {
+            if (name === "") {
               setAlert1(true);
               // alert("Name should be field");
-            } else if (email == "") {
+            } else if (email === "") {
               setAlert2(true);
               // alert("Email should be field");
-            } else if (password == "") {
+            } else if (password === "") {
               setAlert3(true);
               // alert("password should be field");
             } else {
